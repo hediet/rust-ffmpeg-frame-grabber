@@ -1,0 +1,21 @@
+[package]
+name = "ffmpeg-frame-grabber"
+description = "Provides a frame iterator for videos by using ffmpeg. Decodes images using the image crate."
+version = "0.1.0"
+authors = ["Henning Dieterichs <henning.dieterichs@live.de>"]
+edition = "2018"
+license = "MIT"
+repository = "https://github.com/hediet/rust-ffmpeg-frame-grabber"
+exclude = ["data/**/*"]
+
+[dependencies]
+image = "0.23.14"
+snafu = "0.6.10"
+serde_json = "1.0.64"
+serde = "1.0.125"
+regex = "1.4.5"
+lazy_static = "1.4.0"
+
+[dev-dependencies]
+image-visualizer = "0.1.1"
+insta = "1.7.1"
